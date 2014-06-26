@@ -7,8 +7,8 @@
  * Can be achieved in JavaScript by unescape(encodeURIComponent(str)),
  * but this approach may be useful in other languages.
  *
- * @param string strUni Unicode string to be encoded as UTF-8.
- * @return string Encoded string.
+ * @param {string} strUni Unicode string to be encoded as UTF-8.
+ * @returns {string} Encoded string.
  */
 function Utf8Encode(strUni) {
     var strUtf = strUni.replace(
@@ -32,8 +32,8 @@ function Utf8Encode(strUni) {
  * Can be achieved JavaScript by decodeURIComponent(escape(str)),
  * but this approach may be useful in other languages.
  *
- * @param string strUtf UTF-8 string to be decoded back to Unicode.
- * @return string Decoded string.
+ * @param {string} strUtf UTF-8 string to be decoded back to Unicode.
+ * @returns {string} Decoded string.
  */
 function Utf8Decode(strUtf) {
     // note: decode 3-byte chars first as decoded 2-byte strings could appear to be 3-byte char!
